@@ -1,8 +1,10 @@
 package tests;
 
 import Baseclass.baseClass;
+import Mainproject.Insurance;
 //import Mainproject.Insurance;
 import Mainproject.Selenium;
+
 
 
 public class InsurancProject {
@@ -15,11 +17,12 @@ public class InsurancProject {
     	selenium.testDropdown();
     	
     	// --- INSURANCE FLOW ---
-//    	Insurance.Register();
-//    	Insurance.Login();
-//    	Insurance.requestQuotation();
-//    	Insurance.retrieveQuotation();
-//    	Insurance.editProfile();
+    	Insurance insurance=new Insurance();
+    	insurance.Register();
+    	insurance.Login();
+    	insurance.requestQuotation();
+    	insurance.retrieveQuotation();
+    	insurance.editProfile();
 
     	
 

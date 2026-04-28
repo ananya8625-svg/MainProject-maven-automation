@@ -43,7 +43,7 @@ public class Insurance {
 
     // ================= REGISTER =================
 
-    public static void Register() {
+    public void Register() {
     	baseClass.driver.findElement(By.xpath("//*[@id='navbar-brand-centered']/ul/li[3]/a")).click();
         try {
             removeAds();
@@ -97,7 +97,7 @@ public class Insurance {
 
     // ================= LOGIN =================
 
-    public static void Login() {
+    public  void Login() {
         try {
         	baseClass.driver.get("https://demo.guru99.com/insurance/v1/index.php");
             removeAds();
@@ -121,7 +121,7 @@ public class Insurance {
 
     // ================= REQUEST QUOTATION =================
 
-    public static void requestQuotation() {
+    public  void requestQuotation() {
         try {
             removeAds();
 
@@ -186,7 +186,7 @@ public class Insurance {
 
     // ================= RETRIEVE =================
 
-    public static void retrieveQuotation() {
+    public void retrieveQuotation() {
         try {
             removeAds();
 
@@ -222,7 +222,7 @@ public class Insurance {
 
     // ================= EDIT PROFILE =================
 
-    public static void editProfile() {
+    public  void editProfile() {
         try {
             JavascriptExecutor js = (JavascriptExecutor) baseClass.driver;
 
